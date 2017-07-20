@@ -12,6 +12,7 @@
 		<compiler.encoding>UTF-8</compiler.encoding>
 		<compiler.source.version>1.7</compiler.source.version>
 		<compiler.target.version>1.7</compiler.target.version>
+		<atmosphere.version>2.4.13</atmosphere.version>
 	</properties>
 
 	<dependencyManagement>
@@ -71,9 +72,17 @@
 			<artifactId>jackson-core</artifactId>
 		</dependency>
 
-			<dependency>
+		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
+		</dependency>
+
+
+		<!-- atmosphere -->
+		<dependency>
+			<groupId>org.atmosphere</groupId>
+			<artifactId>atmosphere-runtime</artifactId>
+			<version>${atmosphere.version}</version>
 		</dependency>
 
 

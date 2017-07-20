@@ -1,17 +1,15 @@
 /*
  * Copyright Google Inc.
  *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
  */
 package pl.mg.firebasemessaging;
 
@@ -23,16 +21,19 @@ import java.util.List;
  * GCM message notification part.
  *
  * <p>
- * Instances of this class are immutable and should be created using a
- * {@link Builder}. Examples:
+ * Instances of this class are immutable and should be created using a {@link Builder}. Examples:
  *
  * <strong>Simplest notification:</strong>
- * <pre><code>
+ * 
+ * <pre>
+ * <code>
  * Notification notification = new Notification.Builder("myicon").build();
  * </pre></code>
  *
  * <strong>Notification with optional attributes:</strong>
- * <pre><code>
+ * 
+ * <pre>
+ * <code>
  * Notification notification = new Notification.Builder("myicon")
  *    .title("Hello world!")
  *    .body("Here is a more detailed description")
