@@ -2,9 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Atmosphere WebSocket Chat</title>
-<script type="text/javascript" src="javascript/jquery-2.0.3.js"></script>
+<title>Atmosphere Chat</title>
+<!-- Atmosphere -->
 <script type="text/javascript" src="javascript/atmosphere.js"></script>
+<!-- Application -->
+<script type="text/javascript" src="javascript/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="javascript/application.js"></script>
 <style>
 * {
@@ -58,7 +60,8 @@ div {
 </head>
 <body>
 	<div id="header">
-		<h3>Atmosphere WebSocket ONLY Chat</h3>
+		<h3>Atmosphere Chat. Default transport is WebSocket, fallback is
+			long-polling</h3>
 	</div>
 	<div id="content"></div>
 	<div>
