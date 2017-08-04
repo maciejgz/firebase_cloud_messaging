@@ -1,11 +1,11 @@
 package pl.mg.atmosphere.product;
 
-import java.sql.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "actor")
@@ -19,8 +19,11 @@ public class Actor {
   private String firstName;
   @Column(name = "last_name")
   private String lastName;
+
+
   @Column(name = "last_update")
-  private Date lastUpdate;
+  @Temporal(TemporalType.TIMESTAMP)
+  private java.util.Date lastUpdate;
 
   public long getActorId() {
     return actorId;
@@ -46,11 +49,11 @@ public class Actor {
     this.lastName = lastName;
   }
 
-  public Date getLastUpdate() {
+  public java.util.Date getLastUpdate() {
     return lastUpdate;
   }
 
-  public void setLastUpdate(Date lastUpdate) {
+  public void setLastUpdate(java.util.Date lastUpdate) {
     this.lastUpdate = lastUpdate;
   }
 
