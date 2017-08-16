@@ -20,10 +20,11 @@
 			<dependency>
 				<groupId>io.spring.platform</groupId>
 				<artifactId>platform-bom</artifactId>
-				<version>Brussels-SR3</version>
+				<version>Athens-SR6</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
